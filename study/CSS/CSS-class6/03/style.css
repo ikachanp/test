@@ -1,0 +1,23 @@
+
+.box1{
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-color:rebeccapurple;
+}
+
+.box2{
+    float: right;
+    width: 50px;
+    height: 50px;
+    background-color:yellow;
+    border: 2px solid red;
+    
+}
+
+.box3{
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-color:brown;
+}
