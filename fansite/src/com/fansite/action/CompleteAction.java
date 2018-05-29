@@ -24,9 +24,11 @@ public class CompleteAction extends ActionSupport implements SessionAware{
 
 		for(int i =0;i < cartDTOList.size();i++){
 			dto = cartDTOList.get(i);
-			
+
 			dao.complete(dto.getId(),dto.getTotalPrice(),dto.getTotalCount(),session.get("username").toString(),completeFlg);
 		}
+
+		session.remove("cartDTOList");
 		return SUCCESS;
 
 

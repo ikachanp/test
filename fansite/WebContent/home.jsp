@@ -66,8 +66,8 @@ table img{
             <table id="menu">
                 <tr>
                 	<td><a href="<s:url action="HomeAction"/>">Home</a></td>
-                    <td><a href="<s:url action="NewsAction"/>">News</a></td>
-                    <td><a href="<s:url action="CharacterAction"/>">About this site</a></td>
+                    <td><a href="">News</a></td>
+                    <td><a href="">About this site</a></td>
                     <td><a href="<s:url action="ItemAction"/>">Goods</a></td>
 
                     <s:if test="session.loginFlg">
