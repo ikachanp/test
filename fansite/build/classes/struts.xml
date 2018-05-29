@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<!-- Strutsの詳細設定 -->
+<struts>
+
+<constant name="struts.devMode" value="true" />
+<package name="com.fansite.action" extends="struts-default">
+
+<action name="IndexAction" class="com.fansite.action.IndexAction" method="execute">
+<result name="success">home.jsp</result>
+</action>
+
+<action name="HomeAction" class="com.fansite.action.HomeAction" method="execute">
+<result name="success">home.jsp</result>
+</action>
+
+<action name="UserCreateAction" class="com.fansite.action.UserCreateAction" method="execute">
+<result name="success">userCreate.jsp</result>
+</action>
+
+<action name="UserCreateConfirmAction" class="com.fansite.action.UserCreateConfirmAction" method="execute">
+<result name="success">userCreateConfirm.jsp</result>
+<result name="error">userCreate.jsp</result>
+</action>
+
+<action name="UserCreateCompleteAction" class="com.fansite.action.UserCreateCompleteAction" method="execute">
+<result name="success">userCreateComplete.jsp</result>
+<result name="error">userCreate.jsp</result>
+</action>
+
+<action name="LoginAction" class="com.fansite.action.LoginAction" method="execute">
+<result name="success">myPage.jsp</result>
+<result name="error">login.jsp</result>
+</action>
+
+<action name="MyPageLoginAction" class="com.fansite.action.MyPageLoginAction" method="execute">
+<result name="success">myPage.jsp</result>
+<result name="error">login.jsp</result>
+</action>
+
+<action name="MyPageAction" class="com.fansite.action.MyPageAction" method="execute">
+<result name="success">myPage.jsp</result>
+<result name="error">home.jsp</result>
+</action>
+
+
+
+
+
+<action name="ItemAction" class="com.fansite.action.ItemAction" method="execute">
+<result name="success">item.jsp</result>
+</action>
+
+<action name="ItemInfoAction" class="com.fansite.action.ItemInfoAction" method="execute">
+<result name="success">itemInfo.jsp</result>
+</action>
+
+<action name="CartAction" class="com.fansite.action.CartAction" method="execute">
+<result name="success">cart.jsp</result>
+<result name="error">userCreate.jsp</result>
+</action>
+
+<action name="DeleteAction" class="com.fansite.action.DeleteAction" method="execute">
+<result name="success">cart.jsp</result>
+</action>
+
+<action name="CompleteConfirmAction" class="com.fansite.action.CompleteConfirmAction" method="execute">
+<result name="success">completeConfirm.jsp</result>
+</action>
+
+<action name="CompleteAction" class="com.fansite.action.CompleteAction" method="execute">
+<result name="success">complete.jsp</result>
+</action>
+
+<action name="GoCartAction" class="com.fansite.action.GoCartAction" method="execute">
+<result name="success">cart.jsp</result>
+</action>
+
+<action name="LogoutAction" class="com.fansite.action.LogoutAction" method="execute">
+<result name="success">home.jsp</result>
+</action>
+</package>
+
+</struts>
