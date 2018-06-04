@@ -25,7 +25,7 @@ text-align:center;
 <body>
 
 
-            <h1>WELCOME TO ここにサイト名</h1><br><br><br><br>
+            <h1>WELCOME TO ECサイト</h1><br><br><br><br>
 		<div align="center">
 			<a href="<s:url action="IndexAction"/>">
         		ENTER

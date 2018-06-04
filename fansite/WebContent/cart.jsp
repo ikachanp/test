@@ -76,7 +76,7 @@ margin-right:10%;
 
 
 
-            <h1>ここにサイト名</h1>
+            <h1>ECサイト</h1>
             <table id="menu">
                 <tr>
                 	<td><a href="<s:url action="HomeAction"/>">Home</a></td>
